@@ -39,7 +39,7 @@ curr = []
 next = []
 
 # Features dependent on optional dependencies.
-base64 = ["std", "dep:base64"]
+base64 = ["std", "dep:base64"] # removing std here breaks stuff
 serde = ["alloc", "dep:serde", "dep:serde_with", "hex/serde"]
 arbitrary = ["std", "dep:arbitrary"]
 hex = []
